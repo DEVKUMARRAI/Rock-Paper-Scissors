@@ -37,7 +37,7 @@
 .parent{
     border: 2px solid black;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
  
     display: flex;
     justify-content: center;
@@ -48,21 +48,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
     width: 100vw;
 }
 .child{
     display: flex;
     flex-direction: column;
     border: 2px solid red;
-    height: 54%;
+    height: 40%;
     flex: 1 1 250px;
     margin: 10px;
     justify-content:space-evenly;
     align-items: center;
 }
 .child img{
-    max-width: 33.33%;
+    max-width: 50%;
     height: 50%;
 }
 @media(max-width:1000px){
