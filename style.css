@@ -92,19 +92,37 @@ button{
 }
 .banner{
     position: absolute;
-    height: 130vh;
+    height: 52vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
-.banner h1{
+.win{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
     width: 100vw;
     background: #70ff70b5;
+    z-index: -100;
+}
+.loose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    background:rgba(245, 43, 43, 0.598);
+    z-index: -100;
+}
+.draw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    background:rgba(255, 180, 81, 0.793);
     z-index: -100;
 }
 .visible{
