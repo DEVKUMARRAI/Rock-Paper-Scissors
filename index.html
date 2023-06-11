@@ -10,32 +10,38 @@
 </head>
 <body>
     <div class="bg"></div>
+    <div class="banner" id="bn">
+        <h1> !!! GAME STARTED !!!</h1>
+    </div>
     <div class="heading">
         <h1>Welcome To Rock-Paper-Scissors Game</h1>
     </div>
     <div class="parent_score">
-        <div class="child_score">
+        <div class="child_score" >
             <h1>You</h1>
-            <h3>0</h3>    
+            <h3 id="you">100</h3>    
         </div>
-        <div class="child_score">
+        <div class="child_score" >
             <h1>Computer</h1>
-            <h3>0</h3>
+            <h3 id="computer">0</h3>
         </div>
     </div>
     <div class="parent">
-        <div class="child rock">
-            <img src="./Images/landslide.png" alt="#">
+        <div class="child rock" >
+            <img src="./Images/landslide.png" alt="#" id="rock">
             <h2>Rock</h2>
         </div>
-        <div class="child paper">
-            <img src="./Images/papers.png" alt="#">
+        <div class="child paper" >
+            <img src="./Images/papers.png" alt="#" id="paper">
             <h2>Paper</h2>
         </div>
-        <div class="child scissor">
-            <img src="./Images/scissors.png" alt="#">
+        <div class="child scissor" >
+            <img src="./Images/scissors.png" alt="#" id="scissor">
             <h2>Scissor</h2>
         </div>
+    </div>
+    <div class="btn">
+        <button>START</button>
     </div>
 </body>
 </html>

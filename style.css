@@ -11,7 +11,7 @@
 .bg{
     background-image: url("./Images/background.jpg");
     width: 100vw;
-    height: 120vh;
+    height: 130vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,16 +23,23 @@
 .parent_score{
     display: flex;
     flex-direction: row;
+    height: 7vw;
     
-    
+}
+h3{
+    font-size: 1.5rem;
 }
 .child_score{
     display: flex;
     flex-direction: column;
     gap:20px;
     flex: 1 1 200px;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
+}
+.heading h1{
+    font-size: 3rem;
+  
 }
 .parent{
     border: 2px solid black;
@@ -48,8 +55,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 20vh;
     width: 100vw;
+    margin-bottom: 20px;
+    background: #fdedc5ab;
 }
 .child{
     display: flex;
@@ -64,6 +73,42 @@
 .child img{
     max-width: 50%;
     height: 50%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #ded3ce;
+    border: 2px solid #2b2527;
+    filter: drop-shadow(2px 0px 7px white);
+}
+.banner{
+    position: absolute;
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    background: #70ff70b5;
+    z-index: -100;
+}
+.visible{
+    z-index: 100;
 }
 @media(max-width:1000px){
     .child img{
