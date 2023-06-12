@@ -7,10 +7,12 @@ const banner = document.querySelector('#bn');
 const you_select = document.querySelector('#your-selection')
 const com_select = document.querySelector('#computer-selection')
 const banner_text = document.querySelector("#banner-text");
+const reset=document.querySelector('#reset');
 let value = 1;
 
 button.onclick = () => 
 {
+        
         banner.classList.add('visible');
         setTimeout(() => {
             banner.classList.remove('visible');
@@ -116,9 +118,8 @@ button.onclick = () =>
         images.forEach((Image) => {
                 Image.addEventListener('click', clicked_image);
               })
-        if(value==6)
-        {
-            
-        }
+              reset.onclick=()=>{
+                value=1;
+              }
 }
 
