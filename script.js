@@ -19,6 +19,9 @@ button.onclick = () =>
         }, 1000)
         function Show_Win() 
         {
+            let score=parseInt(your_score.innerHTML);
+            score++;
+            your_score.innerHTML=score;
             banner.classList.add('visible');
             setTimeout(() => {
                 banner.classList.remove('visible');
@@ -26,6 +29,9 @@ button.onclick = () =>
         }
         function Show_Loose() 
         {
+            let score=parseInt(computer_score.innerHTML);
+            score++;
+            computer_score.innerHTML=score;
             banner_text.classList.remove('win');
             banner_text.classList.add('loose');
             banner.classList.add('visible');
@@ -120,6 +126,14 @@ button.onclick = () =>
               })
               reset.onclick=()=>{
                 value=1;
+                your_score.innerHTML='0';
+                computer_score.innerHTML='0';
+                banner.classList.add('visible');
+                banner_text.innerHTML='!!! GAME RESTARTED !!!';
+                setTimeout(() => {
+                    banner.classList.remove('visible');
+                    banner_text.innerHTML='!!! GAME STARTED !!!';
+                }, 1000)
               }
 }
 
