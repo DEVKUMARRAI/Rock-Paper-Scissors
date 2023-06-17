@@ -63,7 +63,8 @@ h3{
 .child{
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    border: 2px solid white;
+    background: #09090945;
     height: 40%;
     flex: 1 1 250px;
     margin: 10px;
@@ -73,6 +74,10 @@ h3{
 .child img{
     max-width: 50%;
     height: 50%;
+}
+.child h2{
+    color: white;
+    filter: drop-shadow(3px 3px 0px black);
 }
 .btn{
     display: flex;
@@ -133,14 +138,77 @@ button{
     .child img{
         height: 40%;
     }
+    .heading h1{
+        font-size: 2.5rem;
+      
+    }
 }
-@media(max-width:814px){
+@media(max-width:825px){
     .bg{
         height: 120vh;
     }
+    .heading h1{
+        font-size: 2.2rem;
+      }
+      .child_score h1,h2{
+        font-size: 1.5rem;
+      }
+     .child{
+        flex: 1 1 180px;
+     }
 }
-@media(max-width:550px){
+@media (max-width:730px) {
+    .heading h1{
+        font-size: 1.7rem;
+      }
+}
+@media(max-width:620px){
+    .parent{
+        margin-top: 70px;
+    }
     .bg{
         height: 187vh;
     }
+}
+@media (max-width:570px) {
+    .heading h1{
+        font-size: 1.5rem;
+      }
+      .child_score h1,h2{
+        font-size: 1.2rem;
+      }
+}
+@media (max-width:520px) {
+    .heading h1{
+        font-size: 1.2rem;
+      }
+      .child_score h1,h2{
+        font-size: 1rem;
+      }
+}
+@media (max-width:410px) {
+    .heading h1{
+        font-size: 1rem;
+      }
+      .child_score h1,h2{
+        font-size: 0.8rem;
+      }
+      .btn{
+        margin-top: 280px;
+      }
+}
+@media (max-height:550px) {
+    .btn{
+        margin-top: 230px;
+      }
+}
+@media (max-height:500px) {
+    .btn{
+        margin-top: 200px;
+      }
+}
+@media (max-height:430px) {
+    .btn{
+        margin-top: 150px;
+      }
 }
