@@ -42,7 +42,7 @@ h3{
   
 }
 .parent{
-    border: 2px solid black;
+  
     width: 100vw;
     height: 80vh;
  
@@ -169,6 +169,9 @@ button{
     .bg{
         height: 187vh;
     }
+    .banner{
+        height: 30vh;
+    }
 }
 @media (max-width:570px) {
     .heading h1{
@@ -191,10 +194,22 @@ button{
         font-size: 1rem;
       }
       .child_score h1,h2{
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
       .btn{
         margin-top: 280px;
+      }
+      .child{
+        height: 28%;
+      }
+      .child img{
+        height: 50%;
+      }
+      .btn{
+        margin: 50px;
+      }
+      .banner h1{
+        font-size: 1.1rem;
       }
 }
 @media (max-height:550px) {
